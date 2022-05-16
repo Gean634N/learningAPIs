@@ -41,8 +41,8 @@ este guia foi feito utilizando o gerenciador de pacotes **yarn**.
 
 ### Instale os seguintes plugins
 > ***Prettier - Code Formatter**
-**ESLint**
-**EditorConfig for VS Code***
+>**ESLint**
+>**EditorConfig for VS Code***
 
 presione **`Ctrl+Shift+P`**, digite ***User Settings*** e abilite a opção ***Editor: Format On Save***
 
