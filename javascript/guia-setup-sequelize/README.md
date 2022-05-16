@@ -212,15 +212,17 @@ $ npm install mysql2
 ```bash
 $ npx sequelize-cli init
 ```
-> Caso vc queira mudar as pastas de lugar é necessário avisar o sequelize através do arquivo `.serquelizerc`.
+#### Mudando as pastas de lugar
+Caso vc queira mudar as pastas de lugar é necessário avisar o sequelize através do arquivo `.serquelizerc`.
 
 Exemplo de utilização:
-Criamos uma pasta `src` e movemos para ela as pastas `config` e `models`, dentro de `src` criamos a pasta `database` criamos e movemos para ela as pastas `migrations` e `seeders`
 
-    ./src/config
-    ./src/models
-    ./src/database/migrations
-    ./src/database/seeders
+>Criamos uma pasta `src` e movemos para ela as pastas `config` e `models`, dentro de `src` criamos a pasta `database` criamos e movemos para ela as pastas `migrations` e `seeders`
+
+`./src/config`, `./src/models`, `./src/database/migrations`, `./src/database/seeders`.
+
+<details><summary>Espandir</summary>
+<p>
 
 ```tree
 .
@@ -245,6 +247,8 @@ Criamos uma pasta `src` e movemos para ela as pastas `config` e `models`, dentro
 ├─ package.lock.json
 └─ ...
 ```
+</details>
+
 no caso acima o arquivo `.sequelizerc` ficaria assim:
 ```js
 const path = require('path');
@@ -258,8 +262,7 @@ module.exports = {
 
 ```
 
-
-<div style="text-align: right"> <a href='#sumário' >Sumário ⬆</a> </div>
+<div style="margin-right: 80%"> <a href='#sumário' >Sumário ⬆</a> </div>
 
 ---
 
