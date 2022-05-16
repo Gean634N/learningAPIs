@@ -212,6 +212,51 @@ $ npm install mysql2
 ```bash
 $ npx sequelize-cli init
 ```
+> Caso vc queira mudar as pastas de lugar é necessário avisar o sequelize através do arquivo `.serquelizerc`.
+
+Exemplo de utilização:
+Criamos uma pasta `src` e movemos para ela as pastas `config` e `models`, dentro de `src` criamos a pasta `database` criamos e movemos para ela as pastas `migrations` e `seeders`
+
+    ./src/config
+    ./src/models
+    ./src/database/migrations
+    ./src/database/seeders
+
+```tree
+.
+├─ ...
+├─ node_modules
+├─ src                              
+│   ├─ config  
+|   |   └─ config.json
+|   |
+|   ├─ database
+|   |   ├─ migrations
+|   |   └─ seeders
+|   |     
+|   ├─ models
+|   |
+|   └─ index.js
+|
+├─ .editorconfig
+├─ .eslintrc
+├─ .gitignore
+├─ package.json
+├─ package.lock.json
+└─ ...
+```
+no caso acima o arquivo `.sequelizerc` ficaria assim:
+```js
+const path = require('path');
+
+module.exports = {
+  'config': path.resolve('src', 'config', 'config.json'),
+  'models-path': path.resolve('src', 'models'),
+  'seeders-path': path.resolve('src', 'database', 'seeders'),
+  'migrations-path': path.resolve('src', 'database', 'migrations'),
+};
+
+```
 
 
 <div style="text-align: right"> <a href='#sumário' >Sumário ⬆</a> </div>
