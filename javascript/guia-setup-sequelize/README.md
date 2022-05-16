@@ -262,7 +262,7 @@ module.exports = {
 
 ```
 
-<div style="margin-right: 80%"> <a href='#sumário' >Sumário ⬆</a> </div>
+<div style="text-align: right"> <a href='#sumário' >Sumário ⬆</a> </div>
 
 ---
 
