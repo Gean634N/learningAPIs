@@ -40,9 +40,9 @@ este guia foi feito utilizando o gerenciador de pacotes **yarn**.
 ## Plugins
 
 ### Instale os seguintes plugins
-> ***Prettier - Code Formatter**
->**ESLint**
->**EditorConfig for VS Code***
+>- ***Prettier - Code Formatter**
+>- **ESLint**
+>- **EditorConfig for VS Code***
 
 presione **`Ctrl+Shift+P`**, digite ***User Settings*** e abilite a opção ***Editor: Format On Save***
 
@@ -75,7 +75,7 @@ arquivo .env
 PROT=3000
 ```
 
-arquivo server.js
+arquivo .js em que será utilizada a variavel
 ```js
 const port = process.env.PORT
 ```
@@ -103,14 +103,15 @@ $ npm init -y
 Clique com o botão direito na pasta que representa a raiz do seu projeto e escolha a opção **Generate .editorconfig**
 
 exemplo de configuração:
-> root = true
-[*]
-indent_style = space
-indent_size = 2
-end_of_line = lf
-charset = utf-8
-trim_trailing_whitespace = false
-insert_final_newline = false
+
+    root = true
+    [*]
+    indent_style = space
+    indent_size = 2
+    end_of_line = lf
+    charset = utf-8
+    trim_trailing_whitespace = false
+    insert_final_newline = false
 
 <div style="text-align: right"> <a href='#sumário' >Sumário ⬆</a> </div>
 
