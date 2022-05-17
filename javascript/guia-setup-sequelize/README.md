@@ -62,7 +62,7 @@ adicione o o arquivo .gitignore na raiz do seu projeto e inclua todos os arquivo
 Arquivo que ira conter credenciais e outras informações que não devem ser tornadas publicas.
 - instale a extenção dotenv
 ```bash
-$ npm install dotenv
+npm install dotenv
 ```
 > Crie um arquivo .env.local que ira para o git e servira como guia para saber quais são as variaveis de ambiente necessárias.
 
@@ -90,7 +90,7 @@ const port = process.env.PORT
 ## Inicialização
 todos os comandos podem ser feitos utilizando ***yarn*** ou utilizando ***npm***, utilizar um ou outro.
 ```bash
-$ npm init -y
+npm init -y
 ```
 
 > lembre de incluir o arquivo ***node_modules*** no .gitignore
@@ -122,11 +122,11 @@ exemplo de configuração:
 - instale o eslint como dependencia de desenvolvimento.
 
 ```bash
-$ npm i -D eslint
+npm i -D eslint
 ```
 - inicialize o eslint
 ```bash
-$ npm eslint --init
+npx eslint --init
 ```
 - exemplo de opções:
 >
@@ -140,7 +140,7 @@ $ npm eslint --init
 >instale o prettier, assim como configurações e plugins para que ele trabalhe junto com o eslint, tudo como dependencia de desenvolvimento.
 
 ```bash
-$ npm install prettier eslint-config-prettier eslint-plugin-prettier babel-eslint -D
+npm install prettier eslint-config-prettier eslint-plugin-prettier babel-eslint -D
 ```
 > edite o .eslintrc.json, para adicionar o prettier
 ```json
@@ -167,7 +167,7 @@ $ npm install prettier eslint-config-prettier eslint-plugin-prettier babel-eslin
 ### Instalação do express
 
 ```bash
-$ npm install express
+npm install express
 ```
 
 
@@ -178,7 +178,7 @@ $ npm install express
 ### Instalação do sequelize
 
 ```bash
-$ npm install sequelize
+npm install sequelize
 ```
 
 <div style="text-align: right"> <a href='#sumário' >Sumário ⬆</a> </div>
@@ -187,7 +187,7 @@ $ npm install sequelize
 ### Instalação do pacote de comandos CLI
 
 ```bash
-$ npm install --save-dev sequelize-cli
+npm install --save-dev sequelize-cli
 ```
 
 <div style="text-align: right"> <a href='#sumário' >Sumário ⬆</a> </div>
@@ -197,7 +197,7 @@ $ npm install --save-dev sequelize-cli
 ### Instalação do `mysql2`
 
 ```bash
-$ npm install mysql2
+npm install mysql2
 ```
 
 
@@ -210,7 +210,7 @@ $ npm install mysql2
 > O comando criará as pastas models, migrations, seeders e config.
 
 ```bash
-$ npx sequelize-cli init
+npx sequelize-cli init
 ```
 #### Mudando as pastas de lugar
 Caso vc queira mudar as pastas de lugar é necessário avisar o sequelize através do arquivo `.serquelizerc`.
@@ -271,7 +271,7 @@ module.exports = {
 > O comando irá gerar o arquivo model e o arquivo migration correspondente.
 
 ```bash
-$ npx sequelize model:generate --name NomeDoModel --attributes nomeDoAtributo:string
+npx sequelize model:generate --name NomeDoModel --attributes nomeDoAtributo:string
 ```
 
 
@@ -284,7 +284,7 @@ $ npx sequelize model:generate --name NomeDoModel --attributes nomeDoAtributo:st
 ### Criação de um arquivo _migration_ 
 
 ```bash
-$ npx sequelize migration:generate --name migrationName
+npx sequelize migration:generate --name migrationName
 ```
 
 
@@ -295,7 +295,7 @@ $ npx sequelize migration:generate --name migrationName
 ### Execução dos arquivos _migration_ 
 
 ```bash
-$ npx sequelize db:migrate
+npx sequelize db:migrate
 ```
 
 
@@ -306,7 +306,7 @@ $ npx sequelize db:migrate
 ### Reverter a _migration_
 
 ```bash
-$ npx sequelize db:migrate:undo
+npx sequelize db:migrate:undo
 ```
 
 
@@ -317,7 +317,7 @@ $ npx sequelize db:migrate:undo
 ### Reverter até uma _migration_ específica
 
 ```bash
-$ npx sequelize-cli db:migrate:undo:all --to XXXXXXXXXXXXXX-create-posts.js
+npx sequelize-cli db:migrate:undo:all --to XXXXXXXXXXXXXX-create-posts.js
 ```
 
 
@@ -330,7 +330,7 @@ $ npx sequelize-cli db:migrate:undo:all --to XXXXXXXXXXXXXX-create-posts.js
 ### Criação de um arquivo _seed_
 
 ```bash
-$ npx sequelize seed:generate --name seedName
+npx sequelize seed:generate --name seedName
 ```
 
 
@@ -343,7 +343,7 @@ $ npx sequelize seed:generate --name seedName
 > O comando executa **todos** os arquivos seeds
 
 ```bash
-$ npx sequelize db:seed:all
+npx sequelize db:seed:all
 ```
 
 
@@ -356,7 +356,7 @@ $ npx sequelize db:seed:all
 #### Reverter todos arquivos _seeds_ 
 
 ```bash
-$ npx sequelize db:seed:undo:all
+npx sequelize db:seed:undo:all
 ```
 
 
@@ -367,7 +367,7 @@ $ npx sequelize db:seed:undo:all
 #### Reverter _seed_ mais recente 
 
 ```bash
-$ npx sequelize-cli db:seed:undo
+npx sequelize-cli db:seed:undo
 ```
 
 
@@ -378,7 +378,7 @@ $ npx sequelize-cli db:seed:undo
 #### Reverter _seed_ específica 
 
 ```bash
-$ npx sequelize-cli db:seed:undo --seed name-of-seed-as-in-data
+npx sequelize-cli db:seed:undo --seed name-of-seed-as-in-data
 ```
 
 
