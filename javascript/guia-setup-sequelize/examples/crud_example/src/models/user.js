@@ -15,17 +15,3 @@ const User = (sequelize, DataTypes) => {
 };
 
 module.exports = User;
-
-//   User.init(
-//     {
-//       name: DataTypes.STRING,
-//       email: DataTypes.STRING,
-//       age: DataTypes.INTEGER,
-//     },
-//     {
-//       sequelize,
-//       modelName: 'User',
-//     }
-//   );
-//   return User;
-// };

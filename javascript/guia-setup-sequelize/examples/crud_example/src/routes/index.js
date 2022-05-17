@@ -1,16 +1,17 @@
 const { Router } = require('express');
+const UserController = require('../controllers/users.controller');
 
 const router = Router();
 
-router.get('/', (req, res) => {
+router.get('/', (_req, res) => {
   return res.json({ message: 'hello world' });
 });
 
 // CRUD
-router.post('/users', async () => {}); // C: Create
-router.get('/users', async () => {}); // R: Reade
-router.get('/users/:userId', async () => {}); // R: Reade One
-router.put('/users/:userId', async () => {}); // U: Update
-router.delete('/users/:userId', async () => {}); // D: Delete
+router.post('/users', UserController.create); // C: Create
+router.get('/users', UserController.findAll); // R: Reade
+router.get('/users/:id', UserController.findOne); // R: Reade One
+router.put('/users/:id', UserController.update); // U: Update
+router.delete('/users/:id', UserController.destroy); // D: Delete
 
 module.exports = router;
